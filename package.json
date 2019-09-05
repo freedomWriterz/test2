@@ -8,7 +8,8 @@
     "node": "node server.js",
     "server": "nodemon server.js",
     "react": "cd ./view && npm run-script start",
-    "start": "concurrently \"npm run server\" \"npm run react\""
+    "start": "concurrently \"npm run server\" \"npm run react\"",
+    "heroku-postbuild": "cd view && npm install && npm run build"
   },
   "author": "Abdullah Alsqoor, Shaker Al-Abady, Mohammad Obidat, Emad Al-rashed, Ahamd Arrag, Mohammad Alfar",
   "license": "ISC",

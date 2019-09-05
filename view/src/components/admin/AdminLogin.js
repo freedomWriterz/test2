@@ -12,7 +12,7 @@ export class AdminLogin extends Component {
     const password = this.password.value;
 
     axios
-      .post("http://localhost:9000/admin/login", { email, password })
+      .post("/admin/login", { email, password })
       .then(res => {
         console.log(res.data);
         if (res.data === true) {
